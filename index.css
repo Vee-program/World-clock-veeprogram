@@ -1,44 +1,65 @@
+body {
+  background-image: url("world.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
 h1 {
   text-align: center;
 }
 .container {
   display: block;
-  margin: 0 auto;
+  margin: 200px auto;
   text-align: center;
   box-shadow: inset 5px 5px 10px 10px rgba(0, 0, 0, 0.05);
-  background-color: bisque;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 50%,
+    rgb(11, 40, 138) 100%
+  );
   width: 500px;
-  height: 400px;
+  height: 380px;
   padding-top: 30px;
   border-radius: 10px;
 }
 #city {
-  width: 400px;
+  width: 450px;
   height: 40px;
   box-shadow: inset rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   color: gray;
 }
-.london {
+.pretoria,
+.mumbai {
   display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
-  font-size: 40px;
+  padding-left: 20px;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 30px;
 }
 .time {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   font-weight: bold;
-  font-size: 35px;
-  padding-right: 10px;
+  font-size: 30px;
+  padding-right: 20px;
+  margin: 0;
+}
+small {
+  padding-top: 6px;
+}
+hr {
+  width: 90%;
 }
 .date {
   display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
+  padding-left: 20px;
   margin: 0;
 }
 footer {
