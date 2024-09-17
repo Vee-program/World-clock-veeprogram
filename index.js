@@ -26,11 +26,6 @@ function updateTime() {
 
 function updateCityTimeZone(event) {
   let cityTimeZone = event.target.value;
-
-  if (cityTimeZone === "currrent") {
-    cityTimeZone = moment.tz.guess();
-  }
-
   let cityZone = event.target.value.replace("_", " ").split("/")[1];
   let timeZone = moment().tz(`${event.target.value}`);
   let dateElement = moment().tz(`${event.target.value}`).format("MMMM Do YYYY");
