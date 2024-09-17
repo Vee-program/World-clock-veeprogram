@@ -63,5 +63,7 @@ hr {
   margin: 0;
 }
 footer {
+  font-weight: lighter;
   text-align: center;
+  padding: 30px;
 }
