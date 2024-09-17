@@ -7,6 +7,7 @@ body {
 }
 h1 {
   text-align: center;
+  padding-top: 15px;
 }
 .container {
   display: block;
@@ -20,7 +21,6 @@ h1 {
   );
   width: 500px;
   height: 380px;
-  padding-top: 5px;
   border-radius: 10px;
 }
 #city {
@@ -33,26 +33,27 @@ h1 {
 }
 .johannesburg,
 .singapore,
-.citySelect {
+.citySelect,
+.sydney {
   display: flex;
   justify-content: flex-start;
   padding-left: 20px;
-  font-size: 25px;
+  font-size: 15px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 .time {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 50px;
+  bottom: 30px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   padding-right: 20px;
   margin: 0;
 }
 small {
-  padding-top: 6px;
+  padding-top: 2px;
 }
 hr {
   width: 90%;

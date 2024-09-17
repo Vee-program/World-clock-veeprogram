@@ -22,6 +22,16 @@ function updateTime() {
       .format("h:mm:ss [<small>]A[</small>]");
     singaporeDateElement.innerHTML = moment().format("MMMM Do YYYY");
   }
+  let sydneyCityElement = document.querySelector("#sydney");
+  if (sydneyCityElement) {
+    let sydneyTimeElement = sydneyCityElement.querySelector(".time");
+    let sydneyDateElement = sydneyCityElement.querySelector(".date");
+
+    sydneyTimeElement.innerHTML = moment()
+      .tz("Australia/Sydney")
+      .format("h:mm:ss [<small>]A[</small>]");
+    sydneyDateElement.innerHTML = moment().format("MMMM Do YYYY");
+  }
 }
 
 function updateCityTimeZone(event) {
